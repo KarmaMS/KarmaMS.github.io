@@ -1,15 +1,12 @@
 import { Github, Link } from "lucide-react";
-import GAT from "../assets/GAT.png";
-import noonFS from "../assets/noonFS.png"
-import Crevasse from "../assets/Crevasse.png"
-import goldilocks from "../assets/goldilocks.png"
-import layout from "../assets/layout.png"
-import nn from "../assets/nn.jpg"
+import cloud from "../assets/cloudSec.jpg";
+import net from "../assets/netSim.jpg"
+import web from "../assets/webSPA.png"
 
 const projects = [
     {
         id: 1,
-        img: GAT,
+        img: cloud,
         title: "CAD 2 Sketch",
         descriptor: "AI/ML",
         description: "An implementation of Graph Attention Networks that selects mesh lines from CAD models transforming them into sketches",
@@ -17,7 +14,7 @@ const projects = [
     },
     {
         id: 2,
-        img: Crevasse,
+        img: net,
         descriptor: "AI/ML",
         title: "UNet Antarctic Crevasse Identification",
         description: "A machine learning project using a UNet architecture to automatically identify and segment crevasses in Antarctic satellite imagery, aiding glaciological research and safety",
@@ -26,7 +23,7 @@ const projects = [
     },
     {
         id: 3,
-        img: noonFS,
+        img: web,
         descriptor: "",
         title: "Low-level Noon File System",
         description: "A file system built from the ground up through a custom Kernel, BIOS and Memory Management system",

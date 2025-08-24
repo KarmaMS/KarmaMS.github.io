@@ -1,8 +1,11 @@
-# Dear Viewer
+# Dear Recruiter
 
-I hope your day’s going great, but if it isn’t, enjoy this little cat's company:
+You are the coolest person ever.
 
-=^._.^=
+Here's why:
 
-Legend has it…  
-if you boop its nose, ++aura.
+- You're viewing my website
+- You're shortlisting me for an interview
+- I am a femboy
+
+Legend

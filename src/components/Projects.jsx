@@ -1,32 +1,71 @@
 import { Github, Link } from "lucide-react";
-import netSim from "../assets/netSim.jpg";
-import webSPA from "../assets/webSPA.png"
-import cloudSec from "../assets/cloudSec.jpg"
+import GAT from "../assets/GAT.png";
+import noonFS from "../assets/noonFS.png"
+import Crevasse from "../assets/Crevasse.png"
+import goldilocks from "../assets/goldilocks.png"
+import layout from "../assets/layout.png"
+import nn from "../assets/nn.jpg"
 
 const projects = [
     {
         id: 1,
-        img: netSim,
-        descriptor: "Systems",
-        title: "Network Simulation",
-        description: "Designed and implemented DV/LS routing simulations, a Distributed Hash Table (DHT), and windowed packet transfer for packet-switched networks.",
-        tags: ["Python", "Networking Algorithms"],
+        img: GAT,
+        title: "CAD 2 Sketch",
+        descriptor: "AI/ML",
+        description: "An implementation of Graph Attention Networks that selects mesh lines from CAD models transforming them into sketches",
+        tags: ["Python", "PyTorch", "NumPy"],
+        githubURL: "https://github.com/bilaltiq/Sketch_Nerual_Rendering/tree/Bilal/GAN"
     },
     {
         id: 2,
-        img: webSPA,
-        descriptor: "Web Development",
-        title: "Cabinets Web SPA",
-        description: "A React/TypeScript Single Page Application (20+ routes) with modular UI, responsive grids, lazy-loaded media, and automated asset labeling/ordering.",
-        tags: ["React", "TypeScript", "React Router", "Tailwind CSS"],
+        img: Crevasse,
+        descriptor: "AI/ML",
+        title: "UNet Antarctic Crevasse Identification",
+        description: "A machine learning project using a UNet architecture to automatically identify and segment crevasses in Antarctic satellite imagery, aiding glaciological research and safety",
+        tags: ["Python", "TensorFlow", "Keras", "Jupyter", "Matplotlib", "NumPy"],
+        githubURL: "https://github.com/bilaltiq/UNet-Crevasse-Identifier"
+    
     },
     {
         id: 3,
-        img: cloudSec,
-        descriptor: "Cloud Security",
-        title: "Cloud Security Policy Automation",
-        description: "Automated JSON-based analysis workflows, validated 80+ AWS RQL policies in sandbox environments, and created onboarding resources for cloud security engineers.",
-    }
+        img: noonFS,
+        descriptor: "",
+        title: "Low-level Noon File System",
+        description: "A file system built from the ground up through a custom Kernel, BIOS and Memory Management system",
+        tags: ["Assembly (RISC-V)", "C"],
+        githubURL: "https://github.com/bilaltiq/NoonFS"
+  
+    },
+    {
+        id: 4,
+        img: layout,
+        descriptor: "3D Web Development",
+        title: "Layout",
+        description: "A website helping customers design their apartment with furniture before they buy",
+        tags: ["React", "Typescript", "Babylon", "NextJS", "TailwindCSS", "Firebase"],
+        githubURL: "https://layout--layout-58451.us-central1.hosted.app/design/1qX1j05ZFqYuvUol8uCI"
+
+    },
+    {
+        id: 5,
+        img: nn,
+        descriptor: "ML",
+        title: "MNIST Custom Neural Network",
+        description: "A fully functional Neural Network built from the ground up with no external libraries; detects MNIST digits",
+        tags: ["Java"],
+        githubURL: "https://github.com/bilaltiq/JavaNeuralNetwork"
+     
+    },
+    {
+        id: 6,
+        img: goldilocks,
+        descriptor: "Game Design",
+        title: "Goldilocks",
+        description: "Explore an infinite procedurally generated universe as try to find the mythical planet of Goldilocks",
+        tags: ["Java"],
+        githubURL: "https://github.com/sergleonov/goldilocksgame"
+
+    },
 ];
 
 export const Projects = () => {
@@ -38,7 +77,7 @@ export const Projects = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    From Cloud Security to Systems Simulation, explore the breadth of my projects.
+                    From Visual Computing to Game Design, delve deeper into my realm of projects.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
@@ -67,13 +106,20 @@ export const Projects = () => {
                             <p className="text-muted-foreground text-sm mb-4">
                                 {project.description}
                             </p>
+                            <div className="flex justify-between items-center">
+                                <div className="flex space-x-3">
+                                    <a href={project.githubURL} className="text-foreground/80 hover:text-primary transition-colors duration-300">
+                                        <Link size={20}/>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         </div>
                     ))}
                 </div>
 
                 <div className="text-center mt-12">
-                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/KarmaMS">
+                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/bilaltiq">
                         GitHub <Github />
                     </a>
 

@@ -41,7 +41,7 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="font-medium"> Email </h4>
-                                <a href="mailto:mtariq27@amherst.edu" className="text-muted-foreground hover:text-primary transition-colors">mtariq27@amherst.edu</a>
+                                <a href="mailto:mtariq27@amherst.edu" className="text-muted-foreground hover:text-primary transition-colors">27100445@lums.edu.pk</a>
                             </div>
                         </div>
 
@@ -49,21 +49,21 @@ export const Contact = () => {
                     
                         <div className="flex flex-col items-center  justify-center">
                             <div className="p-3 rounded-full bg-primary/10 mb-1">
-                                <a href="https://www.linkedin.com/in/tariq-bilal/"><LucideLinkedin className="h-6 w-6 text-primary hover:text-white transition-colors"/></a>
+                                <a href="https://www.linkedin.com/in/maaz-shahid-lums/"><LucideLinkedin className="h-6 w-6 text-primary hover:text-white transition-colors"/></a>
                             </div>
                             <div>
                                 <h4 className="font-medium"> LinkedIn </h4>
-                                <a href="https://www.linkedin.com/in/tariq-bilal/" className="text-muted-foreground hover:text-primary transition-colors"  target="_blank">Bilal Tariq</a>
+                                <a href="https://www.linkedin.com/in/maaz-shahid-lums/" className="text-muted-foreground hover:text-primary transition-colors"  target="_blank">Bilal Tariq</a>
                             </div>
                         </div>
 
                         <div className="flex flex-col items-center justify-center">
                             <div className="p-3 rounded-full bg-primary/10 mb-1">
-                                <a href="https://www.instagram.com/mbtoshq/" target="_blank"><Instagram className="h-6 w-6 text-primary"/> </a>
+                                <a href="https://www.instagram.com/maaz_shahidd/" target="_blank"><Instagram className="h-6 w-6 text-primary"/> </a>
                             </div>
                             <div>
                                 <h4 className="font-medium"> Instagram </h4>
-                                <a className="text-muted-foreground hover:text-primary transition-colors" href="https://www.instagram.com/mbtoshq/" target="blank"> mbtoshq </a>
+                                <a className="text-muted-foreground hover:text-primary transition-colors" href="https://www.instagram.com/maaz_shahidd/" target="blank"> maaz_shahidd </a>
                             </div>
                         </div>  
                     </div>

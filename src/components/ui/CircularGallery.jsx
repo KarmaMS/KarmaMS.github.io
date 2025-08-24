@@ -3,21 +3,6 @@ import { useEffect, useRef } from "react";
 
 import "./CircularGallery.css";
 
-import img4056 from "../../assets/travel/IMG_4056.jpg";
-import img4074 from "../../assets/travel/IMG_4074.jpg";
-import img4488 from "../../assets/travel/IMG_4488.jpg";
-import img4945 from "../../assets/travel/IMG_4945.jpg";
-import img6705 from "../../assets/travel/IMG_6705.jpg";
-import img6753 from "../../assets/travel/IMG_6753.jpg";
-import img6769 from "../../assets/travel/IMG_6769.jpg";
-import img6809 from "../../assets/travel/IMG_6809.jpg";
-import img6828 from "../../assets/travel/IMG_6828.jpg";
-import img6945 from "../../assets/travel/IMG_6945.jpg";
-import img7016 from "../../assets/travel/IMG_7016.jpg";
-import img7031 from "../../assets/travel/IMG_7031.jpg";
-import img9908 from "../../assets/travel/IMG_9908.jpg";
-import img9977 from "../../assets/travel/IMG_9977.jpg";
-
 function debounce(func, wait) {
   let timeout;
   return function (...args) {
@@ -109,22 +94,7 @@ class Title {
 }
 
 class Media {
-  constructor({
-    geometry,
-    gl,
-    image,
-    index,
-    length,
-    renderer,
-    scene,
-    screen,
-    text,
-    viewport,
-    bend,
-    textColor,
-    borderRadius = 0,
-    font,
-  }) {
+  constructor({ geometry, gl, image, index, length, renderer, scene, screen, text, viewport, bend, textColor, borderRadius = 0, font }) {
     this.extra = 0;
     this.geometry = geometry;
     this.gl = gl;
@@ -146,9 +116,7 @@ class Media {
     this.onResize();
   }
   createShader() {
-    const texture = new Texture(this.gl, { 
-      generateMipmaps: true
-    });
+    const texture = new Texture(this.gl, { generateMipmaps: true });
     this.program = new Program(this.gl, {
       depthTest: false,
       depthWrite: false,
@@ -175,12 +143,12 @@ class Media {
         uniform sampler2D tMap;
         uniform float uBorderRadius;
         varying vec2 vUv;
-        
+
         float roundedBoxSDF(vec2 p, vec2 b, float r) {
           vec2 d = abs(p) - b;
           return length(max(d, vec2(0.0))) + min(max(d.x, d.y), 0.0) - r;
         }
-        
+
         void main() {
           vec2 ratio = vec2(
             min((uPlaneSizes.x / uPlaneSizes.y) / (uImageSizes.x / uImageSizes.y), 1.0),
@@ -191,13 +159,12 @@ class Media {
             vUv.y * ratio.y + (1.0 - ratio.y) * 0.5
           );
           vec4 color = texture2D(tMap, uv);
-          
+
           float d = roundedBoxSDF(vUv - 0.5, vec2(0.5 - uBorderRadius), uBorderRadius);
-          
-          // Smooth antialiasing for edges
+
           float edgeSmooth = 0.002;
           float alpha = 1.0 - smoothstep(-edgeSmooth, edgeSmooth, d);
-          
+
           gl_FragColor = vec4(color.rgb, alpha);
         }
       `,
@@ -297,18 +264,7 @@ class Media {
 }
 
 class App {
-  constructor(
-    container,
-    {
-      items,
-      bend,
-      textColor = "#ffffff",
-      borderRadius = 0,
-      font = "bold 30px Figtree",
-      scrollSpeed = 2,
-      scrollEase = 0.05,
-    } = {}
-  ) {
+  constructor(container, { items, bend, textColor = "#ffffff", borderRadius = 0, font = "bold 30px Figtree", scrollSpeed = 2, scrollEase = 0.05 } = {}) {
     document.documentElement.classList.remove("no-js");
     this.container = container;
     this.scrollSpeed = scrollSpeed;
@@ -324,11 +280,7 @@ class App {
     this.addEventListeners();
   }
   createRenderer() {
-    this.renderer = new Renderer({ 
-      alpha: true,
-      antialias: true,
-      dpr: Math.min(window.devicePixelRatio || 1, 2)
-    });
+    this.renderer = new Renderer({ alpha: true, antialias: true, dpr: Math.min(window.devicePixelRatio || 1, 2) });
     this.gl = this.renderer.gl;
     this.gl.clearColor(0, 0, 0, 0);
     this.container.appendChild(this.gl.canvas);
@@ -349,20 +301,20 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-        { image: img4056, text: "Nanga Parbat" },
-        { image: img4074, text: "Fairy Meadows Cabin" },
-        { image: img4488, text: "Himalayas Valley" },
-        { image: img4945, text: "Hunza Night Sky" },
-        { image: img6705, text: "Forest Clouds" },
-        { image: img6753, text: "Sharan Retreat" },
-        { image: img6769, text: "Night Hills" },
-        { image: img6809, text: "Kaghan Forest" },
-        { image: img6828, text: "Trail Ride" },
-        { image: img6945, text: "Sharan Forest" },
-        { image: img7016, text: "Lake Saif ul Maluk" },
-        { image: img7031, text: "Naran Road" },
-        { image: img9908, text: "Kund Banda" },
-        { image: img9977, text: "Katora Lake" },
+      { image: "/travel/IMG_4056.jpg", text: "Nanga Parbat" },
+      { image: "/travel/IMG_4074.jpg", text: "Fairy Meadows Cabin" },
+      { image: "/travel/IMG_4488.jpg", text: "Himalayas Valley" },
+      { image: "/travel/IMG_4945.jpg", text: "Hunza Night Sky" },
+      { image: "/travel/IMG_6705.jpg", text: "Forest Clouds" },
+      { image: "/travel/IMG_6753.jpg", text: "Sharan Retreat" },
+      { image: "/travel/IMG_6769.jpg", text: "Night Hills" },
+      { image: "/travel/IMG_6809.jpg", text: "Kaghan Forest" },
+      { image: "/travel/IMG_6828.jpg", text: "Trail Ride" },
+      { image: "/travel/IMG_6945.jpg", text: "Sharan Forest" },
+      { image: "/travel/IMG_7016.jpg", text: "Lake Saif ul Maluk" },
+      { image: "/travel/IMG_7031.jpg", text: "Naran Road" },
+      { image: "/travel/IMG_9908.jpg", text: "Kund Banda" },
+      { image: "/travel/IMG_9977.jpg", text: "Katora Lake" },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
@@ -472,21 +424,35 @@ class App {
   }
 }
 
-export default function CircularGallery({
-  items,
-  bend = 3,
-  textColor = "#ffffff",
-  borderRadius = 0.05,
-  font = "bold 30px Figtree",
-  scrollSpeed = 2,
-  scrollEase = 0.05,
-}) {
+export default function CircularGallery({ items, bend = 3, textColor = "#ffffff", borderRadius = 0.05, font = "bold 30px Figtree", scrollSpeed = 2, scrollEase = 0.05 }) {
   const containerRef = useRef(null);
+  const appRef = useRef(null);
+
   useEffect(() => {
-    const app = new App(containerRef.current, { items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase });
+    if (containerRef.current) {
+      appRef.current = new App(containerRef.current, {
+        items,
+        bend,
+        textColor,
+        borderRadius,
+        font,
+        scrollSpeed,
+        scrollEase,
+      });
+    }
     return () => {
-      app.destroy();
+      if (appRef.current) {
+        appRef.current.destroy();
+        appRef.current = null;
+      }
     };
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
-  return <div className="circular-gallery" ref={containerRef} />;
+
+  return (
+    <div
+      ref={containerRef}
+      className="circular-gallery-container"
+      style={{ width: "100%", height: "100%", position: "relative", overflow: "hidden" }}
+    />
+  );
 }

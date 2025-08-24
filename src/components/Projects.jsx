@@ -14,7 +14,6 @@ const projects = [
         descriptor: "AI/ML",
         description: "An implementation of Graph Attention Networks that selects mesh lines from CAD models transforming them into sketches",
         tags: ["Python", "PyTorch", "NumPy"],
-        githubURL: "https://github.com/bilaltiq/Sketch_Nerual_Rendering/tree/Bilal/GAN"
     },
     {
         id: 2,
@@ -23,7 +22,6 @@ const projects = [
         title: "UNet Antarctic Crevasse Identification",
         description: "A machine learning project using a UNet architecture to automatically identify and segment crevasses in Antarctic satellite imagery, aiding glaciological research and safety",
         tags: ["Python", "TensorFlow", "Keras", "Jupyter", "Matplotlib", "NumPy"],
-        githubURL: "https://github.com/bilaltiq/UNet-Crevasse-Identifier"
     
     },
     {
@@ -33,37 +31,6 @@ const projects = [
         title: "Low-level Noon File System",
         description: "A file system built from the ground up through a custom Kernel, BIOS and Memory Management system",
         tags: ["Assembly (RISC-V)", "C"],
-        githubURL: "https://github.com/bilaltiq/NoonFS"
-  
-    },
-    {
-        id: 4,
-        img: layout,
-        descriptor: "3D Web Development",
-        title: "Layout",
-        description: "A website helping customers design their apartment with furniture before they buy",
-        tags: ["React", "Typescript", "Babylon", "NextJS", "TailwindCSS", "Firebase"],
-        githubURL: "https://layout--layout-58451.us-central1.hosted.app/design/1qX1j05ZFqYuvUol8uCI"
-
-    },
-    {
-        id: 5,
-        img: nn,
-        descriptor: "ML",
-        title: "MNIST Custom Neural Network",
-        description: "A fully functional Neural Network built from the ground up with no external libraries; detects MNIST digits",
-        tags: ["Java"],
-        githubURL: "https://github.com/bilaltiq/JavaNeuralNetwork"
-     
-    },
-    {
-        id: 6,
-        img: goldilocks,
-        descriptor: "Game Design",
-        title: "Goldilocks",
-        description: "Explore an infinite procedurally generated universe as try to find the mythical planet of Goldilocks",
-        tags: ["Java"],
-        githubURL: "https://github.com/sergleonov/goldilocksgame"
 
     },
 ];
@@ -106,13 +73,6 @@ export const Projects = () => {
                             <p className="text-muted-foreground text-sm mb-4">
                                 {project.description}
                             </p>
-                            <div className="flex justify-between items-center">
-                                <div className="flex space-x-3">
-                                    <a href={project.githubURL} className="text-foreground/80 hover:text-primary transition-colors duration-300">
-                                        <Link size={20}/>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                         </div>
                     ))}

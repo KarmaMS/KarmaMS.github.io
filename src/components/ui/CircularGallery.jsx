@@ -3,20 +3,20 @@ import { useEffect, useRef } from "react";
 
 import "./CircularGallery.css";
 
-import img4056 from "../../assets/Travel/IMG_4056.jpg";
-import img4074 from "../../assets/Travel/IMG_4074.jpg";
-import img4488 from "../../assets/Travel/IMG_4488.jpg";
-import img4945 from "../../assets/Travel/IMG_4945.jpg";
-import img6705 from "../../assets/Travel/IMG_6705.jpg";
-import img6753 from "../../assets/Travel/IMG_6753.jpg";
-import img6769 from "../../assets/Travel/IMG_6769.jpg";
-import img6809 from "../../assets/Travel/IMG_6809.jpg";
-import img6828 from "../../assets/Travel/IMG_6828.jpg";
-import img6945 from "../../assets/Travel/IMG_6945.jpg";
-import img7016 from "../../assets/Travel/IMG_7016.jpg";
-import img7031 from "../../assets/Travel/IMG_7031.jpg";
-import img9908 from "../../assets/Travel/IMG_9908.jpg";
-import img9977 from "../../assets/Travel/IMG_9977.jpg";
+import img4056 from "../../assets/travel/IMG_4056.jpg";
+import img4074 from "../../assets/travel/IMG_4074.jpg";
+import img4488 from "../../assets/travel/IMG_4488.jpg";
+import img4945 from "../../assets/travel/IMG_4945.jpg";
+import img6705 from "../../assets/travel/IMG_6705.jpg";
+import img6753 from "../../assets/travel/IMG_6753.jpg";
+import img6769 from "../../assets/travel/IMG_6769.jpg";
+import img6809 from "../../assets/travel/IMG_6809.jpg";
+import img6828 from "../../assets/travel/IMG_6828.jpg";
+import img6945 from "../../assets/travel/IMG_6945.jpg";
+import img7016 from "../../assets/travel/IMG_7016.jpg";
+import img7031 from "../../assets/travel/IMG_7031.jpg";
+import img9908 from "../../assets/travel/IMG_9908.jpg";
+import img9977 from "../../assets/travel/IMG_9977.jpg";
 
 function debounce(func, wait) {
   let timeout;

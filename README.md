@@ -1,10 +1,8 @@
 # Dear Viewer
 
-I hope your day’s going great, but if it isn’t, enjoy this little cat drawing:
+I hope your day’s going great, but if it isn’t, enjoy this little cat's company:
 
- /\_/\  
-( o.o ) 
- > ^ <
+=^._.^=
 
 Legend has it…  
-if you boop its nose, good luck follows. 🐾
+if you boop its nose, ++aura.

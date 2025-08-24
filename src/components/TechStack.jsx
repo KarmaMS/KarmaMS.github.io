@@ -28,7 +28,7 @@ export const TechStack = () => {
       {[
         { name: "Python", description: "AI & ML", src: pythonLogo },
         { name: "C / C++", description: "Embedded Systems", src: cLogo },
-        { name: "Typescript", description: "Web Development", src: tsLogo },
+        // { name: "Typescript", description: "Web Development", src: tsLogo },
         { name: "React", description: "Frontend Framework", src: reactLogo },
         { name: "MySQL", description: "Database", src: sqlLogo },
         { name: "LaTeX", description: "Document Typesetting", src: LatexLogo },

@@ -41,7 +41,7 @@ export const HeroSection = () => {
           <p className="text-md md:text-lg max-w-2xl mx-auto">
             <ShinyText 
               text="Software, Security & Systems." 
-              speed={3}   // makes the shine faster (default was 5s)
+              speed={3}
               disabled={false} 
               className="text-muted-foreground"
             />

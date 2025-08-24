@@ -17,6 +17,7 @@
     "caniuse-lite": "^1.0.30001723",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
     "lucide-react": "^0.518.0",
     "mkdirp": "^3.0.1",

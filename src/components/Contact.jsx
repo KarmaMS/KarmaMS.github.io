@@ -2,6 +2,7 @@ import { Instagram, LucideLinkedin, Mail, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "../hooks/use-toast";
 import Particles from "../components/ui/Particles";
+import ShinyText from "../components/ui/ShinyText";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -40,8 +41,13 @@ export const Contact = () => {
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Let's connect and build new horizons together.
+        <p className="text-center mb-12 max-w-2xl mx-auto">
+          <ShinyText
+            text="Let's connect and build new horizons together."
+            speed={3} 
+            disabled={false}
+            className="text-muted-foreground"
+          />
         </p>
 
         <div className="grid grid-cols-1 gap-12">
@@ -92,7 +98,7 @@ export const Contact = () => {
                     href="https://www.instagram.com/maaz_shahidd/"
                     target="_blank"
                   >
-                    <Instagram className="h-6 w-6 text-primary" />{" "}
+                    <Instagram className="h-6 w-6 text-primary hover:text-white transition-colors" />{" "}
                   </a>
                 </div>
                 <div>

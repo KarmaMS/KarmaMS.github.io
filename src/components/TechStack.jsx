@@ -1,9 +1,9 @@
 import pythonLogo from "../assets/python.png"
 import cLogo from "../assets/c.png"
-import tsLogo from "../assets/ts.png"
+// import tsLogo from "../assets/ts.png"
 import reactLogo from "../assets/react.png"
 import sqlLogo from "../assets/mysql.png"
-import tailwindLogo from "../assets/tailwind.png"
+// import tailwindLogo from "../assets/tailwind.png"
 import gitLogo from "../assets/git.png"
 import awsLogo from "../assets/aws.png"
 import azureLogo from "../assets/azure.png"
@@ -23,7 +23,7 @@ export const TechStack = () => {
       A <span> <a className="text-glow">Tech Stack</a></span> for Innovation
     </h2>
 
-        <h3 className="text-muted-foreground mb-6">A glimpse into the creative process.</h3>
+        <h3 className="text-muted-foreground mb-6">Turning vision into digital reality, one glimpse at a time.</h3>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 back ">
       {[
         { name: "Python", description: "AI & ML", src: pythonLogo },

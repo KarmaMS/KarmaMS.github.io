@@ -2,7 +2,8 @@ import { ArrowDown } from "lucide-react";
 import ProfileCard from "./ProfileCard";
 import avatar from "../assets/avatar.png";
 import Aurora from "../components/ui/Aurora";
-import BlurText from "./BlurText";
+import BlurText from "../components/ui/BlurText";
+import ShinyText from "../components/ui/ShinyText";
 
 export const HeroSection = () => {
   const handleAnimationComplete = () => {
@@ -37,8 +38,13 @@ export const HeroSection = () => {
             />
           </h1>
 
-          <p className="text-md md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Software, Security & Systems.
+          <p className="text-md md:text-lg max-w-2xl mx-auto">
+            <ShinyText 
+              text="Software, Security & Systems." 
+              speed={3}   // makes the shine faster (default was 5s)
+              disabled={false} 
+              className="text-muted-foreground"
+            />
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 -mt-3 mb-1">

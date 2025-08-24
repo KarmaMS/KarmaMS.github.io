@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "../hooks/use-toast";
 import Particles from "../components/ui/Particles";
 import ShinyText from "../components/ui/ShinyText";
+import { Link } from "react-router-dom";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -21,19 +22,21 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="relative py-24 px-4 overflow-hidden" // removed bg-secondary/30, Particles will be bg
+      className="relative py-24 px-4 overflow-hidden"
     >
       {/* Background Particles */}
-    <Particles
-        particleColors={['#ffffff', '#ffffff']}
-        particleCount={200}
-        particleSpread={10}
-        speed={0.1}
-        particleBaseSize={100}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-    />
+      <div className="absolute inset-0 -z-10">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
+      </div>
 
       {/* Foreground Content */}
       <div className="container mx-auto max-w-5xl relative z-10">
@@ -44,7 +47,7 @@ export const Contact = () => {
         <p className="text-center mb-12 max-w-2xl mx-auto">
           <ShinyText
             text="Let's connect and build new horizons together."
-            speed={3} 
+            speed={3}
             disabled={false}
             className="text-muted-foreground"
           />
@@ -57,6 +60,7 @@ export const Contact = () => {
               Contact Information
             </h3>
             <div className="space-y-6 justify-center">
+              {/* Email */}
               <div className="flex flex-col items-center justify-center">
                 <div className="p-3 rounded-full bg-primary/10 mb-1">
                   <a href="mailto:27100445@lums.edu.pk">
@@ -74,9 +78,14 @@ export const Contact = () => {
                 </div>
               </div>
 
+              {/* LinkedIn */}
               <div className="flex flex-col items-center justify-center">
                 <div className="p-3 rounded-full bg-primary/10 mb-1">
-                  <a href="https://www.linkedin.com/in/maaz-shahid-lums/">
+                  <a
+                    href="https://www.linkedin.com/in/maaz-shahid-lums/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <LucideLinkedin className="h-6 w-6 text-primary hover:text-white transition-colors" />
                   </a>
                 </div>
@@ -86,19 +95,22 @@ export const Contact = () => {
                     href="https://www.linkedin.com/in/maaz-shahid-lums/"
                     className="text-muted-foreground hover:text-primary transition-colors"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Maaz Shahid
                   </a>
                 </div>
               </div>
 
+              {/* Instagram */}
               <div className="flex flex-col items-center justify-center">
                 <div className="p-3 rounded-full bg-primary/10 mb-1">
                   <a
                     href="https://www.instagram.com/maaz_shahidd/"
                     target="_blank"
+                    rel="noreferrer"
                   >
-                    <Instagram className="h-6 w-6 text-primary hover:text-white transition-colors" />{" "}
+                    <Instagram className="h-6 w-6 text-primary hover:text-white transition-colors" />
                   </a>
                 </div>
                 <div>
@@ -106,7 +118,8 @@ export const Contact = () => {
                   <a
                     className="text-muted-foreground hover:text-primary transition-colors"
                     href="https://www.instagram.com/maaz_shahidd/"
-                    target="blank"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     maaz_shahidd
                   </a>
@@ -172,12 +185,30 @@ export const Contact = () => {
 
               <button
                 type="submit"
-                className={cn("cosmic-button", "w-full flex items-center justify-center gap-2")}
+                className={cn(
+                  "cosmic-button",
+                  "w-full flex items-center justify-center gap-2"
+                )}
               >
                 <Send size={16} /> Send
               </button>
             </form>
           </div>
+
+            {/* Extra Info About Me */}
+            <div className="mt-6 text-center">
+              <Link
+                to="/additional-info"
+                className="inline-block px-8 py-4 mt-4 border border-primary rounded-full text-primary hover:bg-primary/10 transition-colors"
+              >
+                <ShinyText
+                  text='If you want to know more about who "Maaz" is'
+                  speed={3}
+                  disabled={false}
+                  className="font-semibold text-lg md:text-xl"
+                />
+              </Link>
+            </div>
         </div>
       </div>
     </section>

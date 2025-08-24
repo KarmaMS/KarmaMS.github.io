@@ -1,10 +1,7 @@
 import { Github, Link } from "lucide-react";
-import GAT from "../assets/GAT.png";
-import noonFS from "../assets/noonFS.png"
-import Crevasse from "../assets/Crevasse.png"
-import goldilocks from "../assets/goldilocks.png"
-import layout from "../assets/layout.png"
-import nn from "../assets/nn.jpg"
+import netSim from "../assets/netSim.jps";
+import webSPA from "../assets/webSPA.png"
+import cloudSec from "../assets/cloudSec.jpg"
 
 const projects = [
     {

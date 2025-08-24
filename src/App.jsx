@@ -3,6 +3,7 @@ import { Home } from "./pages/Home"
 import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound"
 import { Toaster } from "./components/ui/toaster"
+import ScrollToTop from "./components/ScrollToTop";
 import SplashCursor from './components/ui/SplashCursor'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       {/* <SplashCursor /> */}
       <Toaster />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/additional-info" element={<About />} />

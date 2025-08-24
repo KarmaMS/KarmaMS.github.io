@@ -53,7 +53,7 @@ export const Contact = () => {
                             </div>
                             <div>
                                 <h4 className="font-medium"> LinkedIn </h4>
-                                <a href="https://www.linkedin.com/in/maaz-shahid-lums/" className="text-muted-foreground hover:text-primary transition-colors"  target="_blank">Bilal Tariq</a>
+                                <a href="https://www.linkedin.com/in/maaz-shahid-lums/" className="text-muted-foreground hover:text-primary transition-colors"  target="_blank">Maaz Shahid</a>
                             </div>
                         </div>
 
@@ -78,19 +78,19 @@ export const Contact = () => {
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium mb-2"> Your Name </label>
                             <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                            placeholder="Bilal Tariq..."></input>
+                            placeholder="John Doe..."></input>
                         </div>
 
                           <div>
                             <label htmlFor="name" className="block text-sm font-medium mb-2"> Your Email </label>
                             <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
-                            placeholder="cowinmariokart@gmail.com"></input>
+                            placeholder="astana@gmail.com"></input>
                         </div>
 
                           <div>
                             <label htmlFor="message" className="block text-sm font-medium mb-2"> Your Message </label>
                             <textarea  id="message" name="message" required className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
-                            placeholder="You're such a cool guy"/>
+                            placeholder="You're breathtaking"/>
                         </div>
 
                         <button type="submit" className={cn("cosmic-button",

@@ -1,5 +1,5 @@
 import { Github, Link } from "lucide-react";
-import netSim from "../assets/netSim.jps";
+import netSim from "../assets/netSim.jpg";
 import webSPA from "../assets/webSPA.png"
 import cloudSec from "../assets/cloudSec.jpg"
 

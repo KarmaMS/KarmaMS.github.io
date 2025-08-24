@@ -11,6 +11,7 @@ import prismaLogo from "../assets/prisma.png"
 import dockerLogo from "../assets/docker.png"
 import jsonLogo from "../assets/json.png"
 import linuxLogo from "../assets/linux.png"
+import LatexLogo from "../assets/tex.png"
 
 
 
@@ -19,7 +20,7 @@ export const TechStack = () => {
         <section id="techstack" className="py-24 px-4 bg-background">
   <div className="container mx-auto max-w-5xl text-center">
     <h2 className="text-3xl md:text-4xl font-bold mb-6">
-      A <span> <a className="text-glow">Tech Stack</a></span> for Dreams
+      A <span> <a className="text-glow">Tech Stack</a></span> for Innovation
     </h2>
 
         <h3 className="text-muted-foreground mb-6">A glimpse into the creative process.</h3>
@@ -30,7 +31,7 @@ export const TechStack = () => {
         { name: "Typescript", description: "Web Development", src: tsLogo },
         { name: "React", description: "Frontend Framework", src: reactLogo },
         { name: "MySQL", description: "Database", src: sqlLogo },
-        { name: "Tailwind", description: "Frontend Design", src: tailwindLogo },
+        { name: "LaTeX", description: "Document Typesetting", src: LatexLogo },
         { name: "Git", description: "Version Control", src: gitLogo },
         { name: "AWS", description: "Cloud Security", src: awsLogo },
         { name: "Azure", description: "Cloud Security", src: azureLogo },

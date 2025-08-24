@@ -99,7 +99,6 @@ export const Projects = () => {
                   {project.description}
                 </p>
 
-                {/* ✅ Show Visit Website button if link exists */}
                 {project.link && (
                   <a
                     href={project.link}

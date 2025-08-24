@@ -1,11 +1,16 @@
 import pythonLogo from "../assets/python.png"
-import javaLogo from "../assets/java.png"
 import cLogo from "../assets/c.png"
 import tsLogo from "../assets/ts.png"
 import reactLogo from "../assets/react.png"
 import sqlLogo from "../assets/mysql.png"
 import tailwindLogo from "../assets/tailwind.png"
 import gitLogo from "../assets/git.png"
+import awsLogo from "../assets/aws.png"
+import azureLogo from "../assets/azure.png"
+import prismaLogo from "../assets/prisma.png"
+import dockerLogo from "../assets/docker.png"
+import jsonLogo from "../assets/json.png"
+import linuxLogo from "../assets/linux.png"
 
 
 
@@ -20,14 +25,19 @@ export const TechStack = () => {
         <h3 className="text-muted-foreground mb-6">A glimpse into the creative process.</h3>
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 back ">
       {[
-        { name: "Python", description: "AI & ML" , src: pythonLogo },
-        { name: "Java", description: "App Development", src: javaLogo },
+        { name: "Python", description: "AI & ML", src: pythonLogo },
         { name: "C / C++", description: "Embedded Systems", src: cLogo },
         { name: "Typescript", description: "Web Development", src: tsLogo },
         { name: "React", description: "Frontend Framework", src: reactLogo },
         { name: "MySQL", description: "Database", src: sqlLogo },
         { name: "Tailwind", description: "Frontend Design", src: tailwindLogo },
-        { name: "Git", description: "well... it's Git", src: gitLogo },
+        { name: "Git", description: "Version Control", src: gitLogo },
+        { name: "AWS", description: "Cloud Security", src: awsLogo },
+        { name: "Azure", description: "Cloud Security", src: azureLogo },
+        { name: "Prisma Cloud", description: "CSPM & RQL", src: prismaLogo },
+        { name: "Docker", description: "Containers", src: dockerLogo },
+        { name: "JSON", description: "Automation Workflows", src: jsonLogo },
+        { name: "Linux / Bash", description: "Systems & Scripting", src: linuxLogo },
       ].map((tech, index) => (
         <div
           key={index}

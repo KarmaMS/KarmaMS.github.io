@@ -32,7 +32,11 @@ export const About = () => {
                         <a href="#contact" className="cosmic-button">
                             Get In Touch
                         </a>
-                        <a href="" className="px-6 py-2 rounded-full border border-primary text-white hover:bg-primary/10 transition-colors duration-300">
+                        <a 
+                            href="../assets/Maaz_Shahid_Resume.pdf" 
+                            download="Maaz_Shahid_Resume.pdf"
+                            className="px-6 py-2 rounded-full border border-primary text-white hover:bg-primary/10 transition-colors duration-300"
+                        >
                             Download Resume
                         </a>
                     </div>

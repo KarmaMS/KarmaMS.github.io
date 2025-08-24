@@ -301,20 +301,20 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: "/travel/IMG_4056.jpg", text: "Nanga Parbat" },
-      { image: "/travel/IMG_4074.jpg", text: "Fairy Meadows Cabin" },
-      { image: "/travel/IMG_4488.jpg", text: "Himalayas Valley" },
-      { image: "/travel/IMG_4945.jpg", text: "Hunza Night Sky" },
-      { image: "/travel/IMG_6705.jpg", text: "Forest Clouds" },
-      { image: "/travel/IMG_6753.jpg", text: "Sharan Retreat" },
-      { image: "/travel/IMG_6769.jpg", text: "Night Hills" },
-      { image: "/travel/IMG_6809.jpg", text: "Kaghan Forest" },
-      { image: "/travel/IMG_6828.jpg", text: "Trail Ride" },
-      { image: "/travel/IMG_6945.jpg", text: "Sharan Forest" },
-      { image: "/travel/IMG_7016.jpg", text: "Lake Saif ul Maluk" },
-      { image: "/travel/IMG_7031.jpg", text: "Naran Road" },
-      { image: "/travel/IMG_9908.jpg", text: "Kund Banda" },
-      { image: "/travel/IMG_9977.jpg", text: "Katora Lake" },
+        { image: "/travel/IMG_4056.jpg" },
+        { image: "/travel/IMG_4074.jpg" },
+        { image: "/travel/IMG_4488.jpg" },
+        { image: "/travel/IMG_4945.jpg" },
+        { image: "/travel/IMG_6705.jpg" },
+        { image: "/travel/IMG_6753.jpg" },
+        { image: "/travel/IMG_6769.jpg" },
+        { image: "/travel/IMG_6809.jpg" },
+        { image: "/travel/IMG_6828.jpg" },
+        { image: "/travel/IMG_6945.jpg" },
+        { image: "/travel/IMG_7016.jpg" },
+        { image: "/travel/IMG_7031.jpg" },
+        { image: "/travel/IMG_9908.jpg" },
+        { image: "/travel/IMG_9977.jpg" },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

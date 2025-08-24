@@ -37,11 +37,11 @@ export const Contact = () => {
                     <div className="space-y-6 justify-center">
                         <div className="flex flex-col items-center justify-center">
                             <div className="p-3 rounded-full bg-primary/10 mb-1">
-                                <a href="mailto:mtariq27@amherst.edu"><Mail className="h-6 w-6 text-primary hover:text-white transition-colors"/></a>
+                                <a href="mailto:27100445@lums.edu.pk"><Mail className="h-6 w-6 text-primary hover:text-white transition-colors"/></a>
                             </div>
                             <div>
                                 <h4 className="font-medium"> Email </h4>
-                                <a href="mailto:mtariq27@amherst.edu" className="text-muted-foreground hover:text-primary transition-colors">27100445@lums.edu.pk</a>
+                                <a href="mailto:27100445@lums.edu.pk" className="text-muted-foreground hover:text-primary transition-colors">27100445@lums.edu.pk</a>
                             </div>
                         </div>
 

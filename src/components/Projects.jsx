@@ -119,7 +119,7 @@ export const Projects = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/bilaltiq">
+                    <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/KarmaMS">
                         GitHub <Github />
                     </a>
 

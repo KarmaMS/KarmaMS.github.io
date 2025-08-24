@@ -80,7 +80,7 @@ export const About = () => {
                             </div>
 
                             <div>
-                                <h1 className="font-semibold text-left">Cloud Security @ Johri Technologies</h1>
+                                <h1 className="font-semibold text-left">SaaS Security Auditor @ Johri Technologies</h1>
                                 <ul className="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1 text-left">
                                     <li>Led security audits for 5 SaaS vendors; tailored assessment templates covering identity, encryption, IR, and compliance.</li>
                                     <li>Developed interview frameworks and analyzed stakeholder responses; documented 40+ control gaps with risk classification, and built client-facing dashboards.</li>

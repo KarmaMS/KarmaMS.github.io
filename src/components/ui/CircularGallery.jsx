@@ -245,12 +245,11 @@ class App {
   onTouchMove(e) {
     if (!this.isDown) return;
     const x = e.touches ? e.touches[0].clientX : e.clientX;
-    const distance = (this.start - x) * (this.scrollSpeed * 0.015);
+    const distance = (this.start - x) * (this.scrollSpeed * 0.025);
     this.scroll.target = this.scroll.position + distance;
   }
   onTouchUp() {
     this.isDown = false;
-    this.scroll.target += this.speed * 50;
     this.onCheck();
   }
   onWheel(e) {

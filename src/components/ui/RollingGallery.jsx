@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import {  useMotionValue, useAnimation, useTransform } from "motion/react";
+import { motion, useMotionValue, useAnimation, useTransform } from "framer-motion"; 
 import "./RollingGallery.css";
 
 const IMGS = [

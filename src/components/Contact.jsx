@@ -42,7 +42,7 @@ export const Contact = () => {
       <div className="container mx-auto max-w-5xl relative z-10">
 
           {/* Extra Info About Me */}
-          <div className="mt-6 text-center">
+          <div className="mt-4 mb-6 text-center">
             <Link
               to="/additional-info"
               className="inline-block px-8 py-4 mt-4 border border-primary rounded-full text-primary hover:bg-primary/10 transition-colors"

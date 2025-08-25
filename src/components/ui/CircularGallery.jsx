@@ -124,26 +124,10 @@ class Media {
 
   update(scroll, direction) {
     this.plane.position.x = this.x - scroll.current - this.extra;
-    const x = this.plane.position.x;
-    const H = this.viewport.width / 2;
 
-    if (this.bend === 0) {
-      this.plane.position.y = 0;
-      this.plane.rotation.z = 0;
-    } else {
-      const B_abs = Math.abs(this.bend);
-      const R = (H * H + B_abs * B_abs) / (2 * B_abs);
-      const effectiveX = Math.min(Math.abs(x), H);
-
-      const arc = R - Math.sqrt(R * R - effectiveX * effectiveX);
-      if (this.bend > 0) {
-        this.plane.position.y = -arc;
-        this.plane.rotation.z = -Math.sign(x) * Math.asin(effectiveX / R);
-      } else {
-        this.plane.position.y = arc;
-        this.plane.rotation.z = Math.sign(x) * Math.asin(effectiveX / R);
-      }
-    }
+    // Always flat / linear, no bending
+    this.plane.position.y = 0;
+    this.plane.rotation.z = 0;
 
     this.speed = scroll.current - scroll.last;
     this.program.uniforms.uTime.value += 0.04;

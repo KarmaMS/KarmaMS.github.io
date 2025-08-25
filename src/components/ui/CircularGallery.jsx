@@ -14,6 +14,7 @@ function lerp(p1, p2, t) {
   return p1 + (p2 - p1) * t;
 }
 
+// eslint-disable-next-line no-unused-vars
 function autoBind(instance) {
   const proto = Object.getPrototypeOf(instance);
   Object.getOwnPropertyNames(proto).forEach((key) => {

@@ -40,7 +40,24 @@ export const Contact = () => {
 
       {/* Foreground Content */}
       <div className="container mx-auto max-w-5xl relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+
+          {/* Extra Info About Me */}
+          <div className="mt-6 text-center">
+            <Link
+              to="/additional-info"
+              className="inline-block px-8 py-4 mt-4 border border-primary rounded-full text-primary hover:bg-primary/10 transition-colors"
+            >
+              <ShinyText
+                text='If you want to know more about who "Maaz" is'
+                speed={3}
+                disabled={false}
+                className="font-semibold text-lg md:text-xl"
+              />
+            </Link>
+          </div>
+
+        
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-4 text-center">
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
@@ -194,21 +211,6 @@ export const Contact = () => {
               </button>
             </form>
           </div>
-
-            {/* Extra Info About Me */}
-            <div className="mt-6 text-center">
-              <Link
-                to="/additional-info"
-                className="inline-block px-8 py-4 mt-4 border border-primary rounded-full text-primary hover:bg-primary/10 transition-colors"
-              >
-                <ShinyText
-                  text='If you want to know more about who "Maaz" is'
-                  speed={3}
-                  disabled={false}
-                  className="font-semibold text-lg md:text-xl"
-                />
-              </Link>
-            </div>
         </div>
       </div>
     </section>

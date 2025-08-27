@@ -56,7 +56,7 @@ export const AboutHero = () => {
         </div>
 
         {/* Profile Card below text */}
-        <div className="flex flex-col items-center justify-center scale-90 -mt-10 space-y-6">
+        <div className="flex flex-col items-center justify-center scale-90 -mt-10 space-y-10">
           <ProfileCard
             name="Maaz Shahid"
             title="Curiosity & Discovery"

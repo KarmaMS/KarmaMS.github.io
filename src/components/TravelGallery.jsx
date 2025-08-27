@@ -11,7 +11,7 @@ export const TravelGallery = () => {
       style={{ minHeight: "80vh" }}
     >
       {/* Softer but more visible Galaxy Background */}
-      <div className="absolute inset-0 z-0 opacity-85 blur-[0.7px]">
+      {/* <div className="absolute inset-0 z-0 opacity-85 blur-[0.7px]">
         <Galaxy
           mouseRepulsion={false}
           mouseInteraction={false}
@@ -20,7 +20,7 @@ export const TravelGallery = () => {
           saturation={0.4}
           hueShift={150}
         />
-      </div>
+      </div> */}
 
       {/* Foreground Content */}
       <div className="relative z-10 text-center">
@@ -31,16 +31,16 @@ export const TravelGallery = () => {
           </h2>
 
           <h3 className="text-muted-foreground mb-12">
-            Exploring and capturing places, and moments that rejuvenate me!
+            Exploring and capturing places, and moments that rejuvenate me &lt;3
           </h3>
         </div>
 
         {/* Full-width Circular Gallery */}
         <div
           style={{
-            height: "500px",
+            height: "400px",
             position: "relative",
-            marginBottom: "100px",
+            marginBottom: "20px",
             width: "100vw",
           }}
         >

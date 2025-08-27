@@ -49,7 +49,7 @@ export const AboutHero = () => {
             </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4 -mt-3 mb-1">
-            <a href="#travelgallery" className="cosmic-button animate-float">
+            <a href="#travel-gallery" className="cosmic-button animate-float">
               A sneak peek into my life
             </a>
           </div>

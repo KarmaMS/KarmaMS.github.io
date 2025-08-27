@@ -25,13 +25,13 @@ export const Contact = () => {
       className="relative py-24 px-4 overflow-hidden"
     >
       {/* Background Particles */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
+          particleCount={250}
+          particleSpread={15}
           speed={0.1}
-          particleBaseSize={100}
+          particleBaseSize={80}
           moveParticlesOnHover={true}
           alphaParticles={false}
           disableRotation={false}

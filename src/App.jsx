@@ -4,6 +4,7 @@ import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound"
 import { Toaster } from "./components/ui/toaster"
 import ScrollToTop from "./components/ScrollToTop";
+// import { Analytics } from "@vercel/analytics/next"
 import SplashCursor from './components/ui/SplashCursor'
 
 function App() {

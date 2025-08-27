@@ -40,6 +40,7 @@ export const AboutNav = () => {
           Home
         </a>
       </div>
+      
     </nav>
   );
 };

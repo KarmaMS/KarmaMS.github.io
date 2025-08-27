@@ -1,22 +1,24 @@
 import CircularGallery from "../components/ui/CircularGallery";
+import RollingGallery from "../components/ui/RollingGallery";
 import Galaxy from "../components/ui/Galaxy";
+
 
 export const TravelGallery = () => {
   return (
     <section
       id="travel-gallery"
       className="py-24 px-4 relative overflow-hidden"
-      style={{ minHeight: "100vh" }}
+      style={{ minHeight: "80vh" }}
     >
       {/* Softer but more visible Galaxy Background */}
-      <div className="absolute inset-0 z-0 opacity-85 blur-[1px]">
+      <div className="absolute inset-0 z-0 opacity-85 blur-[0.7px]">
         <Galaxy
-          mouseRepulsion={true}
-          mouseInteraction={true}
+          mouseRepulsion={false}
+          mouseInteraction={false}
           density={0.7}
-          glowIntensity={0.2}
+          glowIntensity={0.3}
           saturation={0.4}
-          hueShift={120}
+          hueShift={150}
         />
       </div>
 
@@ -29,14 +31,14 @@ export const TravelGallery = () => {
           </h2>
 
           <h3 className="text-muted-foreground mb-12">
-            Exploring and capturing cultures, places, and moments that inspire me!
+            Exploring and capturing places, and moments that rejuvenate me!
           </h3>
         </div>
 
         {/* Full-width Circular Gallery */}
         <div
           style={{
-            height: "600px",
+            height: "500px",
             position: "relative",
             marginBottom: "100px",
             width: "100vw",

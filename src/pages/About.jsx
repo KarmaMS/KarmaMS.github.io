@@ -3,6 +3,7 @@ import { CustomBackground } from "../components/CustomBackground";
 import { AboutNav } from "../components/AboutNav";
 import { AboutHero } from "../components/AboutHero";
 import { TravelGallery } from "../components/TravelGallery";
+import { CreativeSpace } from "../components/CreativeSpace";
 import { Footer } from "../components/Footer";
 
 export const About = () => {
@@ -15,6 +16,7 @@ export const About = () => {
       <main>
         <AboutHero />
         <TravelGallery />
+        <CreativeSpace />
       </main>
 
       <Footer />

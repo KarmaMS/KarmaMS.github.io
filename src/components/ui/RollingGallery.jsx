@@ -3,31 +3,33 @@ import { motion, useMotionValue, useAnimation, useTransform } from "framer-motio
 import "./RollingGallery.css";
 
 const IMGS = [
-  "/travel/IMG_4056.JPG",
-  "/travel/IMG_4074.JPG",
-  "/travel/IMG_4488.JPG",
-  "/travel/IMG_4945.jpg",
-  "/travel/IMG_6705.JPG",
-  "/travel/IMG_6753.JPG",
-  "/travel/IMG_6769.jpg",
-  "/travel/IMG_6809.JPG",
-  "/travel/IMG_6828.jpg",
-  "/travel/IMG_6945.jpg",
-  "/travel/IMG_7016.JPG",
-  "/travel/IMG_7031.JPG",
-  "/travel/IMG_9908.jpg",
-  "/travel/IMG_9977.jpg",
+  "/creative/1.jpg",
+  "/creative/2.png",
+  "/creative/3.png",
+  "/creative/4.png",
+  "/creative/5.png",
+  "/creative/AILA.png",
+  "/creative/Birdy.png",
+  "/creative/Flowchart.png",
+  "/creative/Globe.png",
+  "/creative/MathGauge.png",
+  "/creative/Maths.png",
+  "/creative/Me.jpg",
+  "/creative/MistriConnect.png",
+  "/creative/Scifinity.png",
+  "/creative/Scinertia.png",
 ];
 
 const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] }) => {
-  images = IMGS; // Always use our travel gallery
+  images = IMGS; 
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(window.innerWidth <= 640);
 
-  const cylinderWidth = isScreenSizeSm ? 1100 : 1800;
+  // 🔹 Make gallery circle wider so images don't overlap
+  const cylinderWidth = isScreenSizeSm ? 2200 : 3200;
   const faceCount = images.length;
-  const faceWidth = (cylinderWidth / faceCount) * 1.5;
+  const faceWidth = 260; // fixed square width
   const dragFactor = 0.05;
-  const radius = cylinderWidth / (2 * Math.PI);
+  const radius = cylinderWidth / (2 * Math.PI); // larger radius = wider spread
 
   const rotation = useMotionValue(0);
   const controls = useAnimation();
@@ -56,7 +58,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] })
           transition: { duration: 2, ease: "linear" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
-      }, 2000);
+      }, 2500);
 
       return () => clearInterval(autoplayRef.current);
     }
@@ -66,7 +68,6 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] })
     const handleResize = () => {
       setIsScreenSizeSm(window.innerWidth <= 640);
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -92,19 +93,18 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] })
           transition: { duration: 2, ease: "linear" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
-      }, 2000);
+      }, 2500);
     }
   };
 
   return (
     <div className="gallery-container">
-      <div className="gallery-gradient gallery-gradient-left"></div>
-      <div className="gallery-gradient gallery-gradient-right"></div>
+      {/* gradients removed for clean edges */}
       <div className="gallery-content">
         <motion.div
           drag="x"
           className="gallery-track"
-          onMouseEnter={handleMouseEnter}
+          onMouseEnter={handleMouseEnter} 
           onMouseLeave={handleMouseLeave}
           style={{
             transform: transform,
@@ -122,10 +122,12 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] })
               className="gallery-item"
               style={{
                 width: `${faceWidth}px`,
+                height: `${faceWidth}px`, // 🔹 make squares
                 transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`,
+                margin: "20 20px", // 🔹 gap between items
               }}
             >
-              <img src={url} alt={`gallery-${i}`} className="gallery-img" />
+              <img src={url} alt={`creative-${i}`} className="gallery-img" />
             </div>
           ))}
         </motion.div>

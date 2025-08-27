@@ -217,6 +217,8 @@ class App {
       { image: "/travel/IMG_7031.JPG" },
       { image: "/travel/IMG_9908.jpg" },
       { image: "/travel/IMG_9977.jpg" },
+      { image: "/travel/IMG_5659.jpg" },
+      { image: "/travel/IMG_5192.JPG" },
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

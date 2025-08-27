@@ -29,7 +29,7 @@ export const HeroSection = () => {
         <div className="space-y-6 mt-32">
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight leading-snug">
             <BlurText
-              text="Hi, I'm Maaz Shahid"
+              text="Hi, I'm Maaz"
               delay={150}
               animateBy="words"   // animate word by word
               direction="top"     // comes from top

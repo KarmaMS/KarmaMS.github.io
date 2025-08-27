@@ -40,7 +40,6 @@ export const TravelGallery = () => {
           style={{
             height: "400px",
             position: "relative",
-            marginBottom: "20px",
             width: "100vw",
           }}
         >

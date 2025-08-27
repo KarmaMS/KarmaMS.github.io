@@ -10,7 +10,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  perspective: 1200px;
+  perspective: 1500px;
   transform-style: preserve-3d;
 }
 
@@ -41,7 +41,7 @@
   border: 2px solid #fff;
   object-fit: cover;
   background: #111;
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: transform 1.0s;
 }
 
 .gallery-item:hover .gallery-img {
@@ -50,7 +50,13 @@
 
 @media (max-width: 800px) {
   .gallery-item {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .gallery-img {
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
   }
 }
